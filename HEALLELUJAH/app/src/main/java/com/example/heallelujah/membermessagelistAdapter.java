@@ -8,9 +8,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.ArrayList;
 
-public class membermessagelistAdapter extends BaseAdapter{
+public class membermessagelistAdapter extends BaseAdapter{ // adapter는 ListView와 실제데이터 사이의 중간역할. 
+                                                            // adapter가 ListView에 실제데이터를 주어 목록으로 보이게함.
     Context mContext = null;
-    LayoutInflater mLayoutInflater = null;
+    LayoutInflater mLayoutInflater = null;//inflater는 xml로 정의된 view를 실체화시킴.
     ArrayList<memberlist> memberlist;
 
     public membermessagelistAdapter(Context context, ArrayList<memberlist> members) {
